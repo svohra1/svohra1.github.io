@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Products Course Project - Slidify</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Data Products Course Project - Slidify">
+  <meta name="author" content="SVohra">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Data Products Course Project - Slidify</h1>
+    <h2>CarPaymentCalc Shiny App</h2>
+    <p>SVohra<br/>Data Science Specialization Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>What?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>An app that helps you compute your car payments</li>
+<li>Just a simple webpage</li>
+<li>Enter 4 pieces of information, and you&#39;re set</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Who?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>It&#39;s for everyone and anyone</li>
+<li>Targetted at those who are in the market for an automobile</li>
+<li>People who might feel intimidated when negotiating financing options</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Why?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Gives the buyer more information about the purchasing process</li>
+<li>Calculate your affordabily before going to the dealer</li>
+<li>Understand the numbers behind the dealer&#39;s offer</li>
+<li>It&#39;s FREE</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Sale Price = $25000 and Downpayment = $2000</li>
+<li>Interest Rate = 5% and Repayment Period = 7 years</li>
+</ol>
+
+<pre><code class="r">price &lt;- 25000; downpayment&lt;- 2000
+rate &lt;- 5; period &lt;- 7
+p &lt;- price - downpayment
+i &lt;- (rate / 100) / 12
+n &lt;- period * 12
+monthlyPayment &lt;- (p * i) / (1 - (i + 1)^(-n))
+monthlyPayment
+</code></pre>
+
+<pre><code>## [1] 325.1
+</code></pre>
+
+<p>Simple and Easy!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='What?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Who?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Why?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Example'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
